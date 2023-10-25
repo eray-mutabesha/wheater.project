@@ -1,0 +1,45 @@
+body {
+  background-image: url("/images/meteoimg.jpeg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+body main {
+  background-color: rgba(0, 0, 0, 0.319);
+  width: 70%;
+  margin: auto;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.646);
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.743);
+  text-align: center;
+}
+
+#meteodiv {
+  background-color: white;
+  border-radius: 20px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#meteodiv input {
+  height: 50px;
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+#display {
+  text-align: center;
+}
+#display P {
+  color: rgb(255, 255, 255);
+}
+#display P span {
+  font-size: 50px;
+}
+#display #drapo {
+  width: 400px;
+}/*# sourceMappingURL=index.css.map */

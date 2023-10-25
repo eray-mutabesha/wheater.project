@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service meteo</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <h1>WHEATER</h1>
+    
+        <div id="meteodiv">
+                <input type="text" placeholder="Enter country'name" id="input_search">
+                <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+        </div>
+        <div id="display">
+            <h2 id="nameofcountry"></h2>
+            <img src="" id="drapo">
+            <div>
+                <p>The wheater right now is : <span id="meteospan"></span></p>
+                <img src="/images/celucius.png" alt="celucius">
+
+            </div>
+        </div>
+    </main> 
+    
+    <script src="index.js"></script>
+</body>
+</html>

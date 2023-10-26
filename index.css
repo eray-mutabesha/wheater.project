@@ -1,3 +1,8 @@
+@media (max-width: 545px) {
+  #degrer p #par {
+    display: none;
+  }
+}
 body {
   background-image: url("/images/meteoimg.jpeg");
   background-repeat: repeat;
@@ -6,9 +11,11 @@ body {
 body main {
   background-color: rgba(0, 0, 0, 0.319);
   width: 70%;
-  margin: auto;
   border-radius: 30px;
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.646);
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -19,27 +26,48 @@ h1 {
 #meteodiv {
   background-color: white;
   border-radius: 20px;
-  width: 350px;
+  width: 60%;
+  margin: 10px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: space-around;
 }
 #meteodiv input {
   height: 50px;
-  width: 300px;
+  width: 50%;
   border-radius: 20px;
   border: none;
   outline: none;
+}
+#meteodiv i {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #display {
   text-align: center;
 }
-#display P {
-  color: rgb(255, 255, 255);
+#display div {
+  display: flex;
+  justify-content: center;
 }
-#display P span {
+#display P {
+  color: white;
+}
+#display P #meteospan {
   font-size: 50px;
 }
 #display #drapo {
-  width: 400px;
+  width: 70%;
+}
+
+#celsius {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+#display {
+  display: none;
 }/*# sourceMappingURL=index.css.map */

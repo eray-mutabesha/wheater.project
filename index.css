@@ -7,6 +7,7 @@ body {
   background-image: url("/images/meteoimg.jpeg");
   background-repeat: repeat;
   background-size: cover;
+  height: 120vh;
 }
 body main {
   background-color: rgba(0, 0, 0, 0.319);
@@ -18,7 +19,7 @@ body main {
   margin-right: auto;
 }
 
-h1 {
+h1, h2 {
   color: rgba(255, 255, 255, 0.743);
   text-align: center;
 }

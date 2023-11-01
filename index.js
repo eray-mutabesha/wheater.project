@@ -1,11 +1,15 @@
+function callAPI(){
+       
 
-function search(){
-// the first API..................................................................................................
-    const span=document.getElementById("meteospan");
     const inputsearch=document.getElementById("input_search");
+valer=inputsearch.value;
+    
+    const span=document.getElementById("meteospan");
+    
     const para=document.getElementById("display");
     para.style.display="block";
-    valer=inputsearch.value;
+   
+    // the first API..................................................................................................
 
     let lienmeteo=`https://api.openweathermap.org/data/2.5/weather?q=${valer}&units=metric&appid=f3f4d962b5eb831efcbccf782e14216e`;
     
@@ -21,6 +25,19 @@ function search(){
     .then(data=>drap.src=data[0].flags.svg);
     
     const county=document.getElementById("nameofcountry");
-    county.innerHTML=valer;
+    county.innerHTML=valer;  
+    
 }
-
+ 
+// on click to enter
+window.addEventListener("keydown",(e)=>{
+    if(e.key==="Enter"){
+callAPI();
+    }
+    
+})
+// on click to the search icon
+const icon=document.getElementById("icon");
+icon.addEventListener("click",()=>{
+    callAPI();
+})

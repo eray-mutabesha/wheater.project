@@ -2,7 +2,7 @@ function callAPI(){
        
 
     const inputsearch=document.getElementById("input_search");
-valer=inputsearch.value;
+    valer=inputsearch.value;
     
     const span=document.getElementById("meteospan");
     
